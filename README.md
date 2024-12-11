@@ -9,7 +9,8 @@ Task Tap Scheduler помогает оптимизировать работу в
 
 Внешный вид плагина 
 
-![image](https://github.com/user-attachments/assets/05d73efc-dc68-41fd-b482-f2e480b6df25)
+![image](https://github.com/user-attachments/assets/db809d47-6631-4c0d-8e7b-c7f4449b24eb)
+
 
 
 Вкладка с задачами
