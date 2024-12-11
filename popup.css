@@ -1,0 +1,83 @@
+body 
+{
+  font-family: Arial, sans-serif;
+  background-color: #121212; 
+}
+
+.taskmanager-container
+{
+  padding: 20px;
+  color: #ffffff; 
+  font-size: 14px;
+  width: 400px; 
+}
+
+h1 
+{
+  font-size: 20px;
+  color: #1db954;
+  margin-bottom: 20px;
+}
+
+#task-header 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#task-page-btn 
+{
+  padding: 10px;
+  background-color: #1db954; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#task-page-btn:hover 
+{
+  background-color: #14843b;
+}
+
+#task-count {
+  font-size: 14px;
+  color: #aaa;
+}
+
+#task-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #1e1e1e; 
+  color: #ffffff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+#task-input::placeholder 
+{
+  color: #aaa; 
+}
+
+#add-task 
+{
+  padding: 10px;
+  background-color: #1db954; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#add-task:hover 
+{
+  background-color: #14843b;
+}

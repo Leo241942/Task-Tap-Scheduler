@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Task Tab Manager",
+  "description": "Закрепляйте задачи за вкладками и управляйте ими!",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "background": 
+  {
+    "service_worker": "background.js"
+  },
+  "action": 
+  {
+    "default_popup": "popup.html",
+    "default_icon": "icon128.png"
+  },
+  "icons": 
+  {
+
+    "128": "icon128.png"
+  }
+}
