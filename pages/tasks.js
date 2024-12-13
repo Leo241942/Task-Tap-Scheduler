@@ -1,6 +1,8 @@
 // Загружаем задачи и отображаем их
-function loadTasks() {
-  chrome.storage.local.get(['tasks'], (result) => {
+function loadTasks() 
+{
+  chrome.storage.local.get(['tasks'], (result) => 
+  {
       const tasks = result.tasks || {};
       const tasksContainer = document.getElementById('tasks-container');
       const noTasksMessage = document.getElementById('no-tasks-message');
@@ -9,17 +11,22 @@ function loadTasks() {
 
       tasksContainer.innerHTML = ''; // Очищаем контейнер
 
-      if (Object.keys(tasks).length === 0) {
+      if (Object.keys(tasks).length === 0) 
+      {
           // Если задач нет, показываем сообщение
           noTasksMessage.classList.remove('hidden');
           deleteSelectedButton.classList.add('hidden');
-      } else {
+      } 
+      else 
+      {
           noTasksMessage.classList.add('hidden');
           deleteSelectedButton.classList.remove('hidden');
       }
 
-      Object.entries(tasks).forEach(([tabId, task]) => {
-          chrome.tabs.get(parseInt(tabId), (tab) => {
+      Object.entries(tasks).forEach(([tabId, task]) => 
+      {
+          chrome.tabs.get(parseInt(tabId), (tab) =>
+          {
               const tabName = tab ? tab.title : `Вкладка ID: ${tabId}`;
 
               // Клонируем шаблон
@@ -38,24 +45,29 @@ function loadTasks() {
 }
 
 // Удаление выбранных задач
-function deleteSelectedTasks() {
-  chrome.storage.local.get(['tasks'], (result) => {
+function deleteSelectedTasks() 
+{
+  chrome.storage.local.get(['tasks'], (result) => 
+  {
       const tasks = result.tasks || {};
       const checkboxes = document.querySelectorAll('.task-select:checked');
 
-      checkboxes.forEach((checkbox) => {
+      checkboxes.forEach((checkbox) => 
+      {
           const tabId = checkbox.dataset.tabId;
           delete tasks[tabId];
       });
 
-      chrome.storage.local.set({ tasks }, () => {
+      chrome.storage.local.set({ tasks }, () =>
+      {
           loadTasks(); // Перезагружаем задачи
       });
   });
 }
 
 // Инициализация страницы
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => 
+{
   const deleteSelectedButton = document.getElementById('delete-selected');
 
   // Загружаем задачи
