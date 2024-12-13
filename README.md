@@ -15,9 +15,8 @@ Task Tap Scheduler помогает оптимизировать работу в
 
 Вкладка с задачами
 
-![image](https://github.com/user-attachments/assets/27cd3684-9824-4960-93b4-b977c07c02f0)
-![image](https://github.com/user-attachments/assets/0365cade-0af8-47c2-8257-b7a8fb07500d)
-
+![image](https://github.com/user-attachments/assets/64b1cc8b-e725-476e-a369-4973ebd44c2a)
+![image](https://github.com/user-attachments/assets/5920f53c-be03-4122-b026-50a315245edd)
 
 
 
